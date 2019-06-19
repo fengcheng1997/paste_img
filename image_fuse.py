@@ -70,7 +70,12 @@ def image_fusion(dst, box, alpha, rois = []):
 
 
 
-   #  poly from json
+###### input  ################
+# poly from json
+# src_path, dst_path
+#
+
+#  poly from json
 poly_from_json = [ [
           396.2770562770563,
           160.6060606060606
@@ -119,7 +124,7 @@ src = cv2.imread(src_path)
 dst = cv2.imread(dst_path)
 
 # 这是 CENTER 所在的地方
-center = [233, 133]  # center 是(y, x)-(width, height) cv2.imread 是(x, y), poly 是(y,x) x 是垂直方向-height， y 是水平方向-width
+center = [int(0.5 * dst.shape[1]), int(0.5 * dst.shape[0])]  # center 是(y, x)-(width, height) cv2.imread 是(x, y), poly 是(y,x) x 是垂直方向-height， y 是水平方向-width
 
 alpha = 0.3
 # rois, box= get_rois(src, dst, poly_from_json, center)
