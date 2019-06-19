@@ -5,13 +5,13 @@ include input and button
 
 
 ## input
-* input :*
+*input :*
 - poly from json
 - src_path
 - dst_path
 
 ## button
-* button:*
+*button:*
 - 'q' : exit
 - 's' : save
 
