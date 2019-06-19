@@ -73,7 +73,7 @@ def image_fusion(dst, box, alpha, rois = []):
 ###### input  ################
 # poly from json
 # src_path, dst_path
-#
+##############################
 
 #  poly from json
 poly_from_json = [ [
